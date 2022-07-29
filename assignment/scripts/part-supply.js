@@ -13,7 +13,6 @@ console.log(partsNeeded);
 console.log('2. Array of supplyChanges:');
 
 let supplyChanges = [3, 5, -6, 0, 7, 11];
-console.log(supplyChanges);
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
 console.log('3. Second supplyChange is:');
@@ -55,6 +54,7 @@ for(i=0; i<supplyChanges.length; i++){
 //but what I've seen online it has something to do with jquery, which I'm guessing we'll get to 
 //later? Going to look into it further.
 
+
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
@@ -91,11 +91,16 @@ console.log(`${sum}`);
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
 
-
 let boxes = 0
 let parts = 572
 
+while (parts > 7){
+   boxes++;
+   parts-=7;
+}
+
+console.log(`${boxes} boxes were filled.`);
+console.log(`${parts} parts were leftover.`);
 
 
-
-c
+//This one was so hard and it hurt my brain lol
